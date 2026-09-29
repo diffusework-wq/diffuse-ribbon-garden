@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f8fa"><meta name="description" content="靠近，讓想法綻放。探索 Diffuse 的藍白緞帶花園，移動滑鼠讓花朵展開，牽引花瓣與光影。"><title>Diffuse — 讓想法綻放</title></head><body>
+<main id="app">
+  <div id="stage" aria-label="可拖曳旋轉的立體緞帶花"></div>
+  <header><a class="wordmark" href="./" aria-label="Diffuse 首頁"><img src="/diffuse-primary.png" alt="Diffuse" /></a><button id="capture" class="outline" title="儲存花朵圖片">保存此刻 <span>↗</span></button></header>
+  <div class="specimen"><span class="bloom-invitation">靠近，讓想法綻放。</span><span id="phase" hidden></span></div>
+
+  <section class="controls" aria-label="花朵控制"><div class="control bloom"><div class="label"><label for="bloom">最大展開 <span>BLOOM</span></label><output id="bloom-value">78%</output></div><input id="bloom" type="range" min="35" max="100" value="96" aria-label="最大展開"><div class="range-labels"><span>輕展</span><span>盛開</span></div></div><div class="control palette"><div class="label">花的色調 <span>PALETTE</span></div><div class="swatches"><button class="swatch active" data-palette="electric" style="--swatch:linear-gradient(135deg,#0033cc,#087bf0,#c2e6ff,#ffffff)" aria-label="Diffuse 藍配色" aria-pressed="true"></button><button class="swatch" data-palette="ember" style="--swatch:linear-gradient(135deg,#000f42,#0033cc,#70b8fa)" aria-label="深藍擴散配色" aria-pressed="false"></button><button class="swatch" data-palette="ice" style="--swatch:linear-gradient(135deg,#ffffff,#a8d7f6,#327ee0)" aria-label="霧白擴散配色" aria-pressed="false"></button><span id="palette-name">Diffuse 藍</span></div></div><div class="control actions"><button id="motion" aria-pressed="true"><span id="motion-icon">Ⅱ</span> 微風擺動</button><button id="reset" title="重設視角與花朵">↺ <span>重新開始</span></button></div></section>
+  <aside class="studio" aria-label="環境燈光材質控制器"><div class="studio-heading"><span>花園實驗室</span><span>LIVE STUDIO</span></div><div id="studio-fields"></div><button id="reset-studio" class="outline">重設燈光與材質 ↺</button></aside>
+  <footer><span>移入展開 · 移出合上 · 滑動牽引花瓣 · 拖曳旋轉 · 滾輪縮放</span></footer><div id="notice" role="status">正在孕育花朵…</div>
+</main><script type="module" src="/src/main.js"></script></body></html>
+
+
+
+
